@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f5faff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #0077b6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header .logo h1 {
+  font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #00b4d8, #90e0ef);
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.btn {
+  display: inline-block;
+  background: #0077b6;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #023e8a;
+}
+
+/* Feature Cards */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+.feature-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+.feature-card img {
+  height: 80px;
+  margin-bottom: 15px;
+}
+.feature-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.feature-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* Chatbot Floating Button */
+.chatbot-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #0077b6;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.chatbot-btn:hover {
+  background: #023e8a;
+}
+
+/* Footer */
+.footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
